@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "d0ea1e02-2295-457b-af8b-9bcad5a75cdb",
+		"name": "Prueba Tecnica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18967844"
+	},
+	"item": [
+		{
+			"name": "CrearUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"name\":\"AAAAA\",\r\n    \"email\":\"asdasd@dasdasdsd.cl\",\r\n    \"password\":\"CCCCCCC\",\r\n    \"phones\": [\r\n            {\r\n                \"number\": \"1241241\",\r\n                \"citycode\": \"1\",\r\n                \"contrycode\": \"57\"\r\n            },\r\n            {\r\n                \"number\": \"5412412fz\",\r\n               \"citycode\": \"2\",\r\n                \"contrycode\": \"57\"\r\n            }\r\n        ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/Users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarUsuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"name\":\"AAAAA\",    \r\n    \"email\":\"flopez5555@gmail.com\",\r\n    \"password\":\"AAAAAa2222AAAAA\",\r\n    \"phones\": [\r\n            {\r\n                \"number\": \"1\",\r\n                \"citycode\": \"1\",\r\n                \"contrycode\": \"99\"\r\n            },\r\n            {\r\n                \"number\": \"2\",\r\n               \"citycode\": \"2\",\r\n                \"contrycode\": \"99\"\r\n            }\r\n        ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/Users/4dc9438c-4cf8-46db-8594-1d82ec0d6231",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"Users",
+						"4dc9438c-4cf8-46db-8594-1d82ec0d6231"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestVariableconfigurable",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"name\":\"AAAAA\",    \r\n    \"email\":\"flopez5555@gmail.com\",\r\n    \"password\":\"CCCCCCC\",\r\n    \"phones\": [\r\n            {\r\n                \"number\": \"1\",\r\n                \"citycode\": \"1\",\r\n                \"contrycode\": \"99\"\r\n            },\r\n            {\r\n                \"number\": \"2\",\r\n               \"citycode\": \"2\",\r\n                \"contrycode\": \"99\"\r\n            }\r\n        ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/Demo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"Demo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
